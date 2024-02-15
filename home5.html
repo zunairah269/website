@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Melody of Love - Home</title>
+
+    <!-- Add CSS styles specific to the home page -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            overflow: hidden;
+        }
+
+        .title {
+            text-align: center;
+            color: #f7f8fd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            background-image: url(https://media.giphy.com/media/PIh4laWJlz9bq/giphy.gif?cid=ecf05e47iwugcu1w3bp6qth7bu7g1tdttt5ltsf9r2p2cwta&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+        }
+
+        .title::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency here */
+            z-index: -1; /* Place the box behind the text */
+            border-radius: 10px; /* Add rounded corners if desired */
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(10, 17, 30);
+            -moz-background-clip: text;
+            -webkit-background-clip: text;
+            text-transform: none;
+            font-size: 32px;
+            margin: 0;
+            opacity: 1;
+            transform: scale(0.94);
+            animation: fade-in 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+            position: relative; /* Ensure the z-index works */
+            z-index: 1; /* Place the text above the pseudo-element */
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: scale(0.94);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .typewriter-container {
+            text-align: right;
+            color: #FFF;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: 20px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            font-family: 'Garamond', serif;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .typewriter {
+            font-size: 21.8px;
+            border-right: 2px solid #FFF;
+            animation: typing 10s steps(60) infinite;
+        }
+
+        @keyframes typing {
+            from, to {
+                border-right-color: transparent;
+            }
+            50% {
+                border-right-color: #FFF;
+            }
+        }
+
+        #link {
+            size: 10cm;
+            color:rgb(10, 17, 30);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Home Page -->
+    <section id="home" class="parallax-section">
+        <div class="title">
+            <h1><span><i>To</span> <span>my</span> <span>Dear</span> <span>FAIZAN SHAIK,<br></span><span><a href="secondhome.html" id="link">A</span>
+            <span>gesture</span> <span>of</span> <span>love</span> <span>crafted</span> <span>for</span> <span>you</span></a></i></h1>
+        </div>
+        <div class="typewriter-container">
+            <div class="typewriter">
+                 No matter what I do, nothing could truly capture the depth of my love for you, yet<br> I will keep adapting different ways to keep expressing. Just so you know, <br>the sky in the background is my attempt to symbolize our love <br>from a different realm, our <i>alag aasman</i>.
+            </div>
+        </div>
+    </section>
+
+    <!-- Add JavaScript specific to the home page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add specific JavaScript for the home page if needed
+        });
+    </script>
+</body>
+</html>

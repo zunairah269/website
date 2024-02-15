@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded GIF</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #videoContainer {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            overflow: hidden;
+        }
+
+        #media {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div id="videoContainer">
+    <!-- Replace the video element with an image element for the GIF -->
+    <img id="media" src="c:\Users\zunai\Downloads\Green Yellow Flowers Natural Youtube Intro (1).gif" alt="Your GIF">
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const media = document.getElementById('media');
+        const mediaContainer = document.getElementById('videoContainer');
+
+        mediaContainer.addEventListener('mouseover', function () {
+            // Add any additional behavior for mouseover if needed
+        });
+
+        mediaContainer.addEventListener('mouseout', function () {
+            // Add any additional behavior for mouseout if needed
+        });
+    });
+</script>
+
+</body>
+</html>

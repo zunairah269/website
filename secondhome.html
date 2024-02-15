@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Web Page</title>
+    <style>
+        body {
+            background: url('https://media.giphy.com/media/FWtVYDHIxgGgE/giphy.gif?cid=790b761175ryy0gcjgy2lmsa0gbws7ftmnmf1o367obv4vwx&ep=v1_gifs_search&rid=giphy.gif&ct=g') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .boxes-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px; /* Set a max-width for the boxes */
+            margin: auto;
+            padding: 10px; /* Add padding for spacing between boxes */
+        }
+
+        .box {
+            width: calc(33.33% - 20px); /* Calculate width for 3 boxes with 10px margin in between */
+            height: 200px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            text-decoration: none;
+            color: #4d4d4d; /* Dark gray text color */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            opacity: 58%;
+        }
+
+        .box:hover {
+            transform: scale(1.1); /* Zoom in on hover */
+        }
+
+        #poetry {
+            background: #ffd3e5; /* Pastel pink background */
+        }
+
+        #melody {
+            background: #cfdcd5; /* Pastel blue background */
+        }
+
+        #map {
+            background: #ffefcc; /* Pastel yellow background */
+        }
+
+        .text {
+            font-size: 22px;
+        }
+    </style>
+</head>z
+<body>
+    <div class="boxes-container">
+        <a href="writing.html" class="box" id="poetry">
+            <div class="text"><b>String of words</b></div>
+        </a>
+        <a href="songs3.html" class="box" id="melody">
+            <div class="text"><b>Musical voyage</b></div>
+        </a>
+        <a href="map.html" class="box" id="map">
+            <div class="text"><b>The tale</b></div>
+        </a>
+    </div>
+</body>
+</html>
